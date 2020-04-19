@@ -9,7 +9,8 @@ import './Blog.css';
 class Blog extends Component {
     state = {
         posts: [],
-        selectedPostId: null
+        selectedPostId: null,
+        error: false
     }
 
     componentDidMount () {
@@ -40,7 +41,6 @@ class Blog extends Component {
             selectedPostId: id
         })
     }
-
 
     render () {
         let posts = <p style={{textAlign: 'center'}}>Something went wrong!</p>
